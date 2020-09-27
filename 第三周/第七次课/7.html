@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>小晨</title>
+        <style>
+            #box1{
+                background-color: rgb(0,60,128);
+                width:40px;
+                height:40px;
+                position: absolute;
+                left:100px;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="box1" >
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div>
+             <input type="button" id="btn1" value="移动">
+        </div>
+       
+        <script>
+            var target=document.getElementById("btn1");
+            target.onclick = function(){
+                var box1 = document.getElementById("box1").style.top;
+                box1=box1.replace("px","");
+                box1=Number(box1) + 5;
+                document.getElementById("box1").style.top = box1 + "px";   
+                }
+        </script>
+	</body>
+</html>
