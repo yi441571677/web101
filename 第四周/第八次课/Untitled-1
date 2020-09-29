@@ -1,0 +1,4 @@
+
+
+var target = document.getElementById("wrapper")
+target.style.backgroundColor="red"
