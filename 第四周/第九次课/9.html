@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>小晨</title>
+        <style>
+            #wrapper{
+                background-color: brown;
+                font-size: 30px;
+                width: 200px;
+                height: 200px;
+                border: 10px dotted green;
+                padding: 15px;
+                margin: 20px;
+            }
+            #wrapper2{
+                background-color: rgb(219, 146, 146);
+                width: 220px;
+                height: 220px;
+            }
+            .button{
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: honeydew;
+                background-color: hotpink;
+                border: none;
+                border-radius: 100px;
+                box-shadow: 0 9px #999;
+            }
+            .button:hover{
+                background-color: lawngreen;
+            }
+            .button:active{
+             background-color: lemonchiffon;
+             box-shadow: 0 5px #666;
+             transform: translateY(4px);
+            }
+            /*波纹按钮*/
+            .button{
+                position: relative;
+                background-color: #4caf50;
+                border: none;
+                font-size: 28px;
+                color: #ffffff;
+                padding: 20px;
+                width: 200px;
+                text-align: center;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .button::after{
+                content: "";
+                background-color: lightgreen;
+                display: block;
+                position: absolute;
+                padding-top: 300%;
+                padding-left: 350%;
+                margin-left: -20px !important;
+                margin-top: -120%;
+                opacity: 0;
+                transition: all 0.8s;
+                z-index: auto;
+            }
+            .button:active::after{
+                padding: 0;
+                margin: 0;
+                opacity: 1;
+                transition: 0s;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="wrapper">
+          1234
+        </div>
+        <div id="wrapper2">
+            5678
+          </div>
+          <h2>按钮动画</h2>
+          <button class="button">请点击我</button>
+          <h2>按钮动画</h2>
+          <button class="button">波纹按钮</button>
+	</body>
+</html>
