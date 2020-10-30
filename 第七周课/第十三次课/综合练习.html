@@ -68,40 +68,139 @@
             position: relative;
             top: 5%;
         }
-        .content{
+        .home{
+            background-color: blanchedalmond;
+            height: 100%;
+            display: none;
+        }
+        .home p{
+            text-indent: 2em;
+        }
+        .tabRight div:target{
+            display: block;
+        }
+        .news{
+            display: none;
+            background-color: darkkhaki;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .news img:first-child{
+            width: 60px;
+            height: 60px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .news img:nth-child(2){
+            height: 60px;
+            margin-left: 10px;
+        }
+        .news img:nth-child(3){
+            height: 35%;
+            width: 80%;
+            margin-left: 50px;
+        }
+        .news p{
+            position: relative;
+            text-indent: 2em;
+        }
+        .department img:first-child{
+            width: 60px;
+            height: 60px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .teachers img:first-child{
+            width: 60px;
+            height: 60px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .teaching img:first-child{
+            width: 60px;
+            height: 60px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .department,
+        .teachers,
+        .teaching{
+            display: none;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }.department{
+            background-color: springgreen;
+        }
+        .teachers{
             background-color: violet;
         }
-        .content p{
-            text-indent: 2em;
+        .teaching{
+            background-color: yellowgreen;
         }
     </style>
 </head>
 <body>
     <div class="wrapper" id="main">
         <div class="tabLeft">
-            <div class="menu" id="home"><a href="" class="">学校概况</a></div>
-            <div class="menu" id="news"><a href="" class="">新闻中心</a></div>
-            <div class="menu" id="department"><a href="file:///E:/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C.html" class="">机构设置</a></div>
-            <div class="menu" id="teachers"><a href="file:///E:/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C.html" class="">师资队伍</a></div>
-            <div class="menu" id="teaching"><a href="file:///E:/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C.html" class="">教育教学</a></div>
+            <div class="menu" id="home_"><a href="#home" class>学校概况</a></div>
+            <div class="menu" id="news_"><a href="#news" class>新闻中心</a></div>
+            <div class="menu" id="department_"><a href="#department" class>机构设置</a></div>
+            <div class="menu" id="teachers_"><a href="#teachers" class>师资队伍</a></div>
+            <div class="menu" id="teaching_"><a href="#teaching" class>教育教学</a></div>
         </div>
         <div class="tabRight">
-            <div id="home" class="content">
+            <div id="home" class="home">
+                <p>
+                    江西软件职业技术大学是全国第一所软件职业技术大学，由国家软件百强企业先锋软件股份有限公司于2003年创办，成立之初就成功入选全国35所示范性软件职业技术学院。2018年12月18日，教育部批准学校升格为本科层次职业学校，成为全国首批15所本科层次职业教育高校之一。2019年5月27日，教育部批复更名为江西软件职业技术大学。
+                </p>
+                <p>
+                    办学以来，学校始终坚持职业教育的属性和特色，牢记“学好软件、报效祖国”使命，秉承“创业创新、知识管理”校训，坚持“校企融合，产学互动”办学模式，实践“三好一专、十一工程”人才培养体系，形成了“用企业家育人理念培养学生”“请工程师当老师”“拿真实的项目进行实训”的校企深度融合发展思路。学校以国产软件为核心，在交通、能源、卫生、教育以及智慧城市等领域为社会累计培养了五万余名软件优秀人才。近年来，学校先后荣获全省高校先进基层党组织、全省高校思想政治工作先进集体，江西省征兵工作先进单位、全省综治工作先进单位，全省普通高校毕业生就业工作优秀等级学校。
+                </p>
+                <p>学校座落在南昌市湾里，占地面积1732亩，现有在校大学生13000余人，专职教师700余人。设有区块链学院、软件工程学院、网络工程学院、经济管理学院、信息技术学院、VR与艺术学院、新媒体学院、马克思主义学院、继续教育学院、国际学院、创业学院等二级学院以及公共基础课教学部等教学单位。设置了区块链技术与应用、软件工程、网络工程等15个本科专业和32个高职专业。我校坚持职业教育属性，牢牢把握专业优势，形成了特色鲜明的软件职业大学。
+
+                </p>
+            </div>
+            <div id="news" class="news">
+                <img src="2.png" alt="">
+                <img src="3.png" alt="">
+                <img src="1.jpg" alt="">
+                <p>
+                    2020年10月24日，江西软件职业技术大学区块链活动节隆重启幕。此次区块链活动节是学习习近平总书记“10·24”讲话精神的重要活动，是先锋软件集团和江西软件大学自2015年来，在区块链领域探索出的具有纪念意义的活动，它生动地诠释了江西软件大学“学习的先锋、运动的先锋、快乐的先锋、创新的先锋”的校园文化精神。
+                </p>
+                <p>
+                    去年的今天，习近平总书记主持中央政治局第十八次集体学习“区块链技术与发展趋势”并作了重要讲话，指出了区块链技术的集成应用在新的技术革新和产业变革中起着重要作用，强调了要把区块链作为核心技术自主创新的重要突破口，加快推动区块链技术和产业创新发展。
+                </p>
+            </div>
+            <div id="department" class="department">
+                <img src="2.png" alt="">
+                <img src="3.png" alt="">
                 <p>
                     软件工程学院现有在校生2000余人。开设本科专业4个，即：软件工程、智能控制技术、计算机应用工程、大数据技术与应用；开设了专科专业5个，即：软件技术、嵌入式技术与应用、人工智能技术服务、工业机器人技术、大数据技术与应用。软件技术专业根据市场用人需求，设置了五个专业方向，即（软件技术(Web软件设计)、软件技术(移动互联网开发技术)、软件技术(网络游戏开发方向)
                     、软件技术(软件测试方向) 、软件技术（Ui设计）等）。 学院共有专任教师74名（不含思政部和基础教学部），其中正高职称 8
                     人，占总数的10.1%、副高职称13人，占总数的17.8%，中级职称24人，占总数的32.8%。具有硕士学位以上的21人，占总数的28.8%，本科以上学历的52人，占总数的70%。有江西省中青年学科带头人1名，江西省高校中青年骨干教师2名。
-
                 </p>
+                <a href="file:///E:/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C.html">查看更多图片，请点击这里！</a>
             </div>
-            <div id="news" class="content">
+            <div id="teachers" class="teachers">
+                <img src="2.png" alt="">
+                <img src="3.png" alt="">
                 <p>
-                    2020年10月24日，江西软件职业技术大学区块链活动节隆重启幕。此次区块链活动节是学习习近平总书记“10·24”讲话精神的重要活动，是先锋软件集团和江西软件大学自2015年来，在区块链领域探索出的具有纪念意义的活动，它生动地诠释了江西软件大学“学习的先锋、运动的先锋、快乐的先锋、创新的先锋”的校园文化精神。
+                    学校自创办以来，认真贯彻落实党中央、国务院关于人才工作的一系列方针、政策，坚持“以人为本”，实施“人才强校”战略，优化人才成长环境，创新人才工作机制。学校师资队伍的结构得到了进一步优化，数量和质量得到了进一步提高，实现了师资队伍建设“十二五”规划的目标，为学校“十三五”期间的发展提供了强有力的师资保证。 根据师资建设发展的需要，学校坚持“加速培养，积极引进”的原则，出台并实施了人才引进、培养、考核、晋升、管理办法，建立了科学合理的选人、用人、留人的机制，围绕“事业留人，环境留人，待遇留人”的人才观，广开渠道，加大投入力度，师资队伍建设不断走上新的台阶。 中国科学院院士李衍达和中国工程院院士倪光南为学校名誉校长。
                 </p>
+                <a href="file:///E:/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C.html">查看更多图片，请点击这里！</a>
             </div>
-            <div id="department" class="content"></div>
-            <div id="teachers" class="content"></div>
-            <div id="teaching" class="content"></div>
+            <div id="teaching" class="teaching">
+                <img src="2.png" alt="">
+                <img src="3.png" alt="">
+                <p>
+                    我校由国家软件百强企业先锋软件公司创办，始建于2003年，2018年经教育部批准在原有的基础上成功升格为职业本科院校， 2019年5月更名为江西软件职业技术大学，成为全国首批15所职业技术大学之一，也是中国第一所软件职业技术大学。 自办学以来，学校秉承“创业创新，知识管理”的校训；坚持“校企融合，产学互动”的 办学模式； 实施“三好一专，十一工程”的育人理念；将“教的都是新的，学的都是用的”贯穿于教学之中，请工程师当老师，用真实的项目实训；培养出了一批批高素质、深受社会欢迎的应用技术技能人才。
+                </p>
+                <a href="file:///E:/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/html/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C/3D%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%86%8C.html">查看更多图片，请点击这里！</a>
+            </div>
         </div>
     </div>
 </body>
