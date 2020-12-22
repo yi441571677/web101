@@ -28,7 +28,7 @@
 // function smallApple(){
 //     console.log("this is small apple")
 // }
- 
+
 // apple3()
 // // bigApple()
 // smallApple()
@@ -85,11 +85,23 @@
 // }
 // apple13().test();//为什么打印apple13？
 
-var apple14 = function(){
-    console.log("this is apple14....")
-    return 100;
-}()
+ var apple14 = function(){
+     console.log("this is apple14....")
+     return 100;
+ }()
+ console.log(apple14);
 
-console.log(apple14);
+ //apple14()(); 
 
-// apple14();
+
+var haw6 = {
+    name:"my name is haw6",
+    printName:function(){
+        console.log(this.name)
+    }
+}
+haw6.printName()
+
+
+
+
